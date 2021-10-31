@@ -1,0 +1,17 @@
+@import "reset.css";
+@import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&family=Shadows+Into+Light&display=swap");
+/* components  */
+@import "components/background.css";
+
+/* screens  */
+@import "screens/index.css";
+
+*,
+label {
+  font-family: "Shadows Into Light", "Hi Melody", cursive;
+}
+
+body {
+  height: 100vh;
+}
