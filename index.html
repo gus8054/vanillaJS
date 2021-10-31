@@ -9,7 +9,6 @@
   </head>
   <body>
     <div class="container">
-      <div class="logout hidden">로그아웃</div>
       <form action="" class="login-form">
         <label for="username" class="login-form__title">USERNAME</label>
         <input
@@ -22,11 +21,38 @@
         />
         <button type="submit" class="login-form__btn">로그인</button>
       </form>
+      <div class="toggle-box hidden">
+        <div class="logout">로그아웃</div>
+        <div class="current-time">
+          <div class="current-time__date">2020-01-01</div>
+          <div class="current-time__time">12H 06M 20S</div>
+        </div>
+        <div class="weather"></div>
+        <div class="user">김동현의 오늘 할 일</div>
+        <div class="todo">
+          <form class="todo__header" action="">
+            <input
+              class="todo__input"
+              type="text"
+              name="insert-todo"
+              id="insert-todo"
+              placeholder="할 일을 입력하시오."
+              required
+            />
+            <input class="todo__addbtn" type="submit" value="추가" />
+          </form>
+          <div class="todo__item">
+            <span class="todo__item__text"> 할 일 1 </span>
+            <button class="todo__item__delbtn" type="submit">X</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://kit.fontawesome.com/22fd71f6b4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="src/bgcolor.js"></script>
     <script src="src/login.js"></script>
     <script src="src/index.js"></script>
   </body>
