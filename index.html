@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="logout hidden">로그아웃</div>
       <form action="" class="login-form">
         <label for="username" class="login-form__title">USERNAME</label>
         <input
@@ -17,10 +18,16 @@
           id="username"
           class="login-form__input"
           placeholder="사용자 이름을 입력하세요."
+          required
         />
         <button type="submit" class="login-form__btn">로그인</button>
       </form>
     </div>
+    <script
+      src="https://kit.fontawesome.com/22fd71f6b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/login.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>

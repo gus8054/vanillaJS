@@ -1,3 +1,12 @@
+.logout {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-family: "Shadows Into Light", "Hi Melody", cursive;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 .login-form {
   width: 80%;
   display: flex;
@@ -8,6 +17,7 @@
   color: white;
   margin-bottom: 10%;
   text-align: center;
+  font-family: "Shadows Into Light", "Hi Melody", cursive;
 }
 .login-form__input {
   text-align: center;

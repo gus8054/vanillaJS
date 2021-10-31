@@ -7,11 +7,13 @@
 /* screens  */
 @import "screens/index.css";
 
-*,
-label {
+* {
   font-family: "Shadows Into Light", "Hi Melody", cursive;
 }
 
 body {
   height: 100vh;
+}
+.hidden {
+  display: none;
 }
