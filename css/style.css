@@ -25,7 +25,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* transition: all 0.2s ease-in-out; */
 }
 #clock {
   width: 100%;
@@ -35,7 +34,6 @@ body {
   text-align: center;
   margin: 10px 0px;
   text-shadow: 1px 1px 2px black;
-  /* transition: all 0.2s ease-in-out; */
 }
 #login-form {
   width: 100%;
@@ -88,7 +86,6 @@ body {
   font-size: 1.2rem;
   color: black;
   font-weight: bold;
-  /* transition: all 0.2s ease-in-out; */
 }
 .container.login {
   width: 40%;
@@ -139,7 +136,6 @@ body {
 }
 #todo-form {
   width: 100%;
-  margin: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +148,7 @@ body {
   font-size: 1rem;
   padding-bottom: 10px;
   border-bottom: 2px solid whitesmoke;
+  margin: auto;
 }
 #todo-form input[type="text"]::placeholder {
   color: whitesmoke;
@@ -165,7 +162,7 @@ body {
 
 ul {
   width: 100%;
-  margin: 5%;
+  margin: 20px 0px;
   padding: 5%;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
@@ -200,4 +197,30 @@ ul li button {
 #container3 {
   width: 80%;
   align-self: flex-start;
+  margin: 0px auto;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 95%;
+  }
+  #greeting {
+    width: 100%;
+    margin: 0px;
+  }
+  .container.login {
+    width: 95%;
+  }
+  .container.login #greeting {
+    margin: 10px 10px;
+    font-size: 1rem;
+  }
+  #container2 {
+    width: 95%;
+    align-self: flex-start;
+    height: auto;
+  }
+  #container3 {
+    width: 95%;
+    margin: 0% 5% 0% 5%;
+  }
 }
