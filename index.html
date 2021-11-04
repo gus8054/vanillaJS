@@ -2,58 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
   </head>
   <body>
     <div class="container">
-      <form action="" class="login-form">
-        <label for="username" class="login-form__title">USERNAME</label>
+      <h2 id="clock">00:00:00</h2>
+      <form id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value=">" />
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+    </div>
+    <div id="container2" class="hidden">
+      <h2 id="weather"><span></span> / <span></span></h2>
+      <h1 id="quote"><span></span><span></span></h1>
+    </div>
+    <div id="container3" class="hidden">
+      <form id="todo-form">
         <input
           type="text"
-          name="username"
-          id="username"
-          class="login-form__input"
-          placeholder="사용자 이름을 입력하세요."
+          placeholder="Write a To Do and Press Enter"
           required
         />
-        <button type="submit" class="login-form__btn">로그인</button>
       </form>
-      <div class="toggle-box hidden">
-        <div class="logout">로그아웃</div>
-        <div class="current-time">
-          <div class="current-time__date">2020-01-01</div>
-          <div class="current-time__time">12H 06M 20S</div>
-        </div>
-        <div class="weather"></div>
-        <div class="user">김동현의 오늘 할 일</div>
-        <div class="todo">
-          <form class="todo__header" action="">
-            <input
-              class="todo__input"
-              type="text"
-              name="insert-todo"
-              id="insert-todo"
-              placeholder="할 일을 입력하시오."
-              required
-            />
-            <input class="todo__addbtn" type="submit" value="추가" />
-          </form>
-          <div class="todo__item">
-            <span class="todo__item__text"> 할 일 1 </span>
-            <button class="todo__item__delbtn" type="submit">X</button>
-          </div>
-        </div>
-      </div>
+      <ul id="todo-list"></ul>
     </div>
-    <script
-      src="https://kit.fontawesome.com/22fd71f6b4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="src/bgcolor.js"></script>
-    <script src="src/login.js"></script>
-    <script src="src/index.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
