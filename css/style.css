@@ -209,6 +209,7 @@ ul li button {
   }
   .container.login {
     width: 95%;
+    margin-top: 20px;
   }
   .container.login #greeting {
     margin: 10px 10px;
@@ -217,10 +218,11 @@ ul li button {
   #container2 {
     width: 95%;
     align-self: flex-start;
-    height: auto;
+    /* height: auto; */
+    margin-top: 20px;
   }
   #container3 {
     width: 95%;
-    margin: 0% 5% 0% 5%;
+    margin: 20px 5% 0% 5%;
   }
 }
