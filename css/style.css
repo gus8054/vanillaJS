@@ -124,6 +124,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 #quote span:last-child {
   margin-top: 10px;
